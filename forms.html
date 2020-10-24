@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- The action and the method attributes are not working now, since we are not dealing with Back-end, but the mentees should understand them -->
+    <!-- Having the google website as a destination for our form will send us and error -->
+    <form action="http://www.google.com" method="POST">
+        <hr>
+      <h3>HTML Forms <strong>Part1</strong></h3>
+<!-- This is the first way in which you can associate a label to an input element. -->
+<!-- This way used the FOR and ID attributes  -->
+    <label for="username">Please enter your Username:</label>
+    <br><input type="text" placeholder="Username" id = "username"></br>
+<!-- This is the first way in which you can associate a label to an input element. -->
+<!-- In this way, you should put your input element inside the label tag -->
+    <br><label>Please enter your Email:
+    <br><input type="email" placeholder="Email"></br>
+    </label></br>
+<!-- You can also use the placeholder alone, and choose not to insert a label -->
+    <br><input type="password" placeholder="password"></br>
+    <!-- #################################################### -->
+    <hr>
+    <h3>HTML Forms <strong>Part2</strong></h3>
+    <!-- checkboxes -->
+    <label for="checkboxes">Please Check all the options that apply:</label></br>
+    <label for="checkboxes">Full-Stack Web Dev</label>
+    <input type="checkbox" id="checkboxes"><br>
+    <label for="checkboxes">Front-end Web Dev</label>
+    <input type="checkbox" id="checkboxes"><br>
+    <label for="checkboxes">Back-end Web Dev</label>
+    <input type="checkbox" id="checkboxes"><br>
+<!-- Radio button --> 
+<!-- The buttons are simply checkboxes that allow the user to have only one selection-->
+<!-- These radio buttons are linked to one another thanks to the name attribute -->
+    <br><label>Please check one option only</label><br>
+    <label for="Radio-yes">Yes</label>
+    <input type="Radio" id="Radio-yes" name="Radio">
+    <br><label for="Radio-no">No</label> 
+    <input type="Radio" id="Radio-no" name="Radio"><br>
+<!-- Multiple selections: Dropdown-->
+    <br><label for="Interest">Please select your area of Interest</label> <br>
+    <!-- <input type="checkbox" id="Interest"> -->
+    <select id="Interest">
+   <option>Sports</option>
+   <option>Technology</option>
+   <option>Music</option>
+    </select> <br>
+<!-- Date -->
+    <br><label for="Date">Please enter the date:</label>
+    <br><input type="date" id="Date"><br>
+<!-- Time -->
+    <br><label for="Time">Please enter the time:</label>
+    <br><input type="time" id="Time"></br>
+ <!-- File -->
+    <br><label for="File">Please upload your file:</label>
+    <br><input type="File" id="File"></br>
+    <hr>
+<!-- Submit -->
+<input type="submit" value="Submit This Form">
+</form>
+</body>
+</html>
